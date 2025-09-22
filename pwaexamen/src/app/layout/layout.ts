@@ -1,13 +1,12 @@
+// src/app/layout/layout.component.ts
 import { Component } from '@angular/core';
-import { RouterOutlet} from '@angular/router';
+import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-layout',
-  standalone: true,              // 👈 standalone correcto
-  imports: [RouterOutlet], // 👈 añade RouterLink y RouterLinkActive
+  standalone: true,
+  imports: [RouterOutlet, RouterLink, RouterLinkActive],
   templateUrl: './layout.html',
-  styleUrls: ['./layout.scss']   // 👈 ojo: es styleUrls (plural)
+  styleUrls: ['./layout.scss']
 })
 export class Layout {}
-
-

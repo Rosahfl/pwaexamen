@@ -4,9 +4,11 @@
   <div class="row row-cols-1 row-cols-md-3 g-4">
     <div class="col" *ngFor="let item of [1,2,3]">
       <div class="card h-100 shadow-sm">
-        <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Card image" />
+        <img src="https://via.placeholder.com/400x200"
+             class="card-img-top"
+             alt="Imagen ilustrativa de la tarjeta {{ item }}" />
         <div class="card-body">
-          <h5 class="card-title">Tarjeta {{ item }}</h5>
+          <h3 class="card-title h5">Tarjeta {{ item }}</h3>
           <p class="card-text">
             Esta es una tarjeta de ejemplo con texto breve para mostrar el layout responsive.
           </p>
@@ -24,8 +26,8 @@
     <button class="btn btn-primary">Principal</button>
     <button class="btn btn-success">Éxito</button>
     <button class="btn btn-danger">Error</button>
-    <button class="btn btn-warning">Advertencia</button>
-    <button class="btn btn-info">Info</button>
+    <button class="btn btn-warning text-dark">Advertencia</button>
+    <button class="btn btn-info text-dark">Info</button>
     <button class="btn btn-outline-dark">Secundario</button>
   </div>
 </section>

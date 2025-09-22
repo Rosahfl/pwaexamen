@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-layout',
-  imports: [],
+  standalone: true,              // 👈 importante
+  imports: [RouterOutlet],       // 👈 permite renderizar rutas hijas
   templateUrl: './layout.html',
-  styleUrl: './layout.scss'
+  styleUrls: ['./layout.scss']   // 👈 ojo: es styleUrls (plural)
 })
-export class Layout {
+export class Layout {}
 
-}
+

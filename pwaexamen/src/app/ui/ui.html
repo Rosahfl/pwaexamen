@@ -1,0 +1,31 @@
+<!-- Sección de tarjetas -->
+<section class="container my-5">
+  <h2 class="mb-4 text-center">Ejemplo de Tarjetas</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col" *ngFor="let item of [1,2,3]">
+      <div class="card h-100 shadow-sm">
+        <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Card image" />
+        <div class="card-body">
+          <h5 class="card-title">Tarjeta {{ item }}</h5>
+          <p class="card-text">
+            Esta es una tarjeta de ejemplo con texto breve para mostrar el layout responsive.
+          </p>
+          <button class="btn btn-primary">Acción</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sección de botones -->
+<section class="container my-5 text-center">
+  <h2 class="mb-4">Ejemplo de Botones</h2>
+  <div class="d-flex justify-content-center gap-3 flex-wrap">
+    <button class="btn btn-primary">Principal</button>
+    <button class="btn btn-success">Éxito</button>
+    <button class="btn btn-danger">Error</button>
+    <button class="btn btn-warning">Advertencia</button>
+    <button class="btn btn-info">Info</button>
+    <button class="btn btn-outline-dark">Secundario</button>
+  </div>
+</section>

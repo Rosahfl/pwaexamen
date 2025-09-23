@@ -1,0 +1,51 @@
+<header>
+  <h1 class="site-heading text-center text-faded d-none d-lg-block">
+    <span class="site-heading-upper text-primary mb-3">
+      Una plantilla de ejemplo accesible
+    </span>
+    <span class="site-heading-lower">Business Casual</span>
+  </h1>
+</header>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-lg-4" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand text-uppercase fw-bold d-lg-none" routerLink="/">Mi App</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item px-lg-4">
+          <a class="nav-link text-uppercase" routerLink="/" routerLinkActive="active" aria-current="page">Home</a>
+        </li>
+        <li class="nav-item px-lg-4">
+          <a class="nav-link text-uppercase" routerLink="/ui" routerLinkActive="active">UI</a>
+        </li>
+        <li class="nav-item px-lg-4">
+          <a class="nav-link text-uppercase" routerLink="/about" routerLinkActive="active">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container mt-4">
+  <router-outlet></router-outlet>
+</main>
+
+<footer class="footer text-faded text-center py-5">
+  <div class="container">
+    <p class="m-0 small">Copyright &copy; Tu Sitio 2025</p>
+  </div>
+</footer>
+
